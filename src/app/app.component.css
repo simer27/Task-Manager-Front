@@ -1,0 +1,212 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #94c6f7, #edf4fa);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.area-adicionar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo {
+  font-family: "Georgia", serif;
+  font-size: 2.5em;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  margin: 0;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.adicionar {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.adicionar:hover {
+  background-color: white;
+  color: blue;
+}
+
+.task-list-area {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f2f6fa;
+}
+
+.subtitulo {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: #66b3ff;
+  margin-right: 10px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  flex: 1;
+}
+
+input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.filter:focus-within {
+  border-color: #66b3ff;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+.task-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.task-card h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.task-card .description {
+  max-height: 50px;
+  overflow-y: auto;
+  margin: 10px 0;
+}
+
+.task-card .status {
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.task-card.done {
+  background-color: #d7fad7;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.concluir {
+  display: flex;
+  gap: 10px;
+  background-color: #66b3ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.concluir:actions {
+  background-color: white;
+  color: #66b3ff;
+}
+
+.deletar {
+  display: flex;
+  gap: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.descricao {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  text-align: left;
+  background-color: #f9f9f9;
+  font-family: "Georgia", serif;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.tituloTarefa {
+  text-transform: uppercase;
+}
+
+.icon-check {
+  color: green;
+}
+
+.icon-del {
+  color: red;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.status-icon {
+  font-size: 18px;
+  color: green;
+  margin-right: 5px;
+}
+
+.hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 10px;
+}

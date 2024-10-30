@@ -1,0 +1,38 @@
+<mat-dialog-content>
+  <h2 mat-dialog-title>Adicionar Tarefa</h2>
+  <mat-form-field>
+    <mat-label>Título</mat-label>
+    <input
+      matInput
+      [(ngModel)]="title"
+      placeholder="Título"
+      (ngModelChange)="checkInputs()"
+      required
+    />
+    <mat-error *ngIf="showError && !title">O título é obrigatório.</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <textarea
+      matInput
+      [(ngModel)]="description"
+      placeholder="Descrição"
+      (ngModelChange)="checkInputs()"
+      required
+    ></textarea>
+    <mat-error *ngIf="showError && !description"
+      >A descrição é obrigatória.</mat-error
+    >
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button class="cancelar" (click)="onCancel()">Cancelar</button>
+  <button
+    mat-button
+    class="adicionar"
+    (click)="onAdd()"
+    [disabled]="!title || !description"
+  >
+    Adicionar
+  </button>
+</mat-dialog-actions>
